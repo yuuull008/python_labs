@@ -17,5 +17,4 @@ while i<len(code):
         break
     i+=step
 print(orig)
-
     
