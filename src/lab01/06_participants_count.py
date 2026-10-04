@@ -9,4 +9,4 @@ for i in range(p_count):
         och+=1
     elif time=='False':
         zaoch+=1
-print("out:",och,zaoch)
+print("out:",och,zaoch) 
