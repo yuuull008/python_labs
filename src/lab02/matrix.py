@@ -34,7 +34,19 @@ def row_sums(mat: list[list[float | int]]) -> list[float]:
 
 def col_sums(mat: list[list[float | int]]) -> list[float]:
     """Сумма по каждому столбцу"""
-    return row_sums(transpose(mat))
+    if not mat:
+            return []
+    wd=len(mat[0])
+    for row in mat:
+        if len(row)!=wd:
+            raise ValueError('Строки разной длины')
+    res = []
+    for j in range(len(mat[0])):
+        s = 0
+        for i in range(len(mat)):
+            s += mat[i][j]
+        res.append(s)
+    return res
 
 
 #тест-кейсы
