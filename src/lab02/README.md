@@ -18,7 +18,7 @@ def min_max(nums: list[float | int]) -> tuple[float | int, float | int]:
             maximum=i
     return(minimum,maximum)
 ```
-тест
+### тест
 ![min_max()](../../images/lab02/img01.PNG)
 
 unique_sorted() - возвращает отсортированный по возрастанию список уникальных значений
@@ -38,7 +38,7 @@ def unique_sorted(nums: list[float | int]) -> list[float | int]:
                 unique[j+1]=c
     return(unique)
 ```
-тест
+### тест
 ![unique_sorted()](../../images/lab02/img02.PNG)
 
 flatten() - Объединяет списки и кортежи в один список
@@ -53,7 +53,7 @@ def flatten(mat: list[list | tuple]) -> list:
             res.append(x)
     return res
 ```
-тест
+### тест
 ![flatten()](../../images/lab02/img03.PNG)
 
 
@@ -76,7 +76,7 @@ def transpose(mat: list[list[float | int]]) -> list[list]:
         res.append(new)
     return res
 ```
-тест
+### тест
 ![transpose()](../../images/lab02/img04.PNG)
 
 row_sums() - суммирует элементы в каждой строке
@@ -97,7 +97,7 @@ def row_sums(mat: list[list[float | int]]) -> list[float]:
         res.append(n)
     return res
 ```
-тест
+### тест
 ![row_sums()](../../images/lab02/img05.PNG)
 
 col_sums() - суммирует элементы в каждом столбце
@@ -118,7 +118,7 @@ def col_sums(mat: list[list[float | int]]) -> list[float]:
         res.append(s)
     return res
 ```
-тест
+### тест
 ![col_sums()](../../images/lab02/img06.PNG)
 
 
@@ -153,5 +153,5 @@ def format_record(rec: tuple[str, str, float]) -> str:
         initials+=name[0].upper()+'.'
     return f'{sn} {initials}, гр. {group}, GPA {gpa:.2f}'
 ```
-тест
+### тест
 ![format_record()](../../images/lab02/img07.PNG)
