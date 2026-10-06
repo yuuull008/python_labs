@@ -21,7 +21,7 @@ def format_record(rec: tuple[str, str, float]) -> str:
     if not(0.0 <= gpa <= 5.0):
         raise ValueError('GPA вне диапазона')
     initials=''
-    sn=part[0].capitalize()
+    sn=part[0].title()
     for name in part[1:]:
         initials+=name[0].upper()+'.'
     return f'{sn} {initials}, гр. {group}, GPA {gpa:.2f}'
