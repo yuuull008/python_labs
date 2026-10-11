@@ -22,6 +22,10 @@ def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
     text=text.strip()
     text=' '.join(text.split())
     return text
+print(normalize("ёжик, Ёлка"))
+print(normalize("ПрИвЕт\nМИр\t"))
+print(normalize("Hello\r\nWorld"))
+print(normalize("  двойные   пробелы  "))
 ```
 ![normalize](../../images/lab03/img01.PNG)
 
@@ -61,6 +65,10 @@ def count_freq(tokens: list[str]) -> dict[str, int]:
     for w in tokens:
         freq[w] = freq.get(w, 0) + 1
     return freq
+print(count_freq(["a","b","a","c","b","a"]))
+print(top_n( count_freq(["a","b","a","c","b","a"]), n=2 ))
+print(count_freq(["bb","aa","bb","aa","cc"]))
+print(top_n( count_freq(["bb","aa","bb","aa","cc"]), n=2 ))
 ```
 ![tokenize](../../images/lab03/img03.PNG)
 
@@ -82,6 +90,10 @@ def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
     """
     items = sorted(freq.items(), key=lambda kv: (-kv[1], kv[0]))
     return items[:n]
+print(count_freq(["a","b","a","c","b","a"]))
+print(top_n( count_freq(["a","b","a","c","b","a"]), n=2 ))
+print(count_freq(["bb","aa","bb","aa","cc"]))
+print(top_n( count_freq(["bb","aa","bb","aa","cc"]), n=2 ))
 ```
 ![top_n](../../images/lab03/img03.PNG)
 
