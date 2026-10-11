@@ -104,9 +104,9 @@ print(top_n( count_freq(["bb","aa","bb","aa","cc"]), n=2 ))
 Скрипт читает **весь ввод до конца** (`sys.stdin.read()`), поэтому работает и с одной строкой, и с многострочным текстом. В терминале Windows ввод завершается сочетанием Ctrl+Z и Enter. Дальше текст проходит конвейер `normalize` → `tokenize` → `count_freq` → `top_n` и печатается статистика.
 
 ```python
+import os
 import sys
-from pathlib import Path
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from lib.text import normalize, tokenize, count_freq, top_n
 
 def main():
