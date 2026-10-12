@@ -45,6 +45,11 @@ def tokenize(text: str) -> list[str]:
     """
     text=re.findall(r"\w+(?:-\w+)*", text)
     return text
+print(tokenize("привет мир"))
+print(tokenize("hello,world!!!"))
+print(tokenize("по-настоящему круто"))
+print(tokenize("2025 год"))
+print(tokenize("emoji 😀 не слово"))
 ```
 ![tokenize](../../images/lab03/img02.PNG)
 
