@@ -10,7 +10,7 @@ def sorted_word_counts(freq: dict[str, int]) -> list[tuple[str, int]]:
     """Возвращает пары (слово, частота): по убыванию частоты, при равенстве по слову."""
     return sorted(freq.items(), key=lambda kv: (-kv[1], kv[0]))
 
-def parse_args() -> argparse.Namespace:
+def parse_args():
     """
     --in: входной текстовый файл.
     --out: путь к CSV-отчёту.
