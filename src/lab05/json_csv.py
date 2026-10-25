@@ -1,7 +1,7 @@
 import csv
 import json
 from pathlib import Path
-
+from src.lib.io_helpers import ensure_parent_dir
 
 def json_to_csv(json_path: str | Path, csv_path: str | Path) -> None:
     """Преобразовывает JSON в CSV.
@@ -38,7 +38,7 @@ def json_to_csv(json_path: str | Path, csv_path: str | Path) -> None:
             if key not in fieldnames:
                 fieldnames.append(key)
     
-    csv_p.parent.mkdir(parents=True, exist_ok=True)
+    ensure_parent_dir(csv_p)
     with csv_p.open("w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames, restval="")
         writer.writeheader()
@@ -70,7 +70,7 @@ def csv_to_json(csv_path: str | Path, json_path: str | Path) -> None:
     if not rows:
         raise ValueError("В CSV нет данных, только заголовок")
 
-    json_p.parent.mkdir(parents=True, exist_ok=True)
+    ensure_parent_dir(json_p)
     with json_p.open("w", encoding="utf-8") as f:
         json.dump(rows, f, ensure_ascii=False, indent=2)
 

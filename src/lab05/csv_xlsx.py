@@ -3,6 +3,7 @@ from pathlib import Path
 
 from openpyxl import Workbook
 from openpyxl.utils import get_column_letter
+from src.lib.io_helpers import ensure_parent_dir
 
 
 def csv_to_xlsx(csv_path: str | Path, xlsx_path: str | Path) -> None:
@@ -42,7 +43,7 @@ def csv_to_xlsx(csv_path: str | Path, xlsx_path: str | Path) -> None:
         letter = get_column_letter(col_index + 1)
         ws.column_dimensions[letter].width = max(8, longest)
 
-    xlsx_p.parent.mkdir(parents=True, exist_ok=True)
+    ensure_parent_dir(xlsx_p)
     wb.save(xlsx_p)
 
 
