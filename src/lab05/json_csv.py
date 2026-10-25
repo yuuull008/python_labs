@@ -78,4 +78,6 @@ def csv_to_json(csv_path: str | Path, json_path: str | Path) -> None:
 if __name__ == "__main__":
     json_to_csv("data/samples/people.json", "data/out/people_from_json.csv")
     csv_to_json("data/samples/people.csv", "data/out/people_from_csv.json")
-    print("Готово: data/out/people_from_json.csv и data/out/people_from_csv.json")
+    json_to_csv("data/samples/students.json", "data/out/students_from_json.csv")
+    csv_to_json("data/samples/books.csv", "data/out/books_from_csv.json")
+    print("Готово: результаты в data/out/")

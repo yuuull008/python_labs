@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Book One",
+    "author": "Author A",
+    "year": "2001"
+  },
+  {
+    "title": "Book Two",
+    "author": "Author B",
+    "year": "2005"
+  },
+  {
+    "title": "Book Three",
+    "author": "Author C",
+    "year": "2010"
+  }
+]
