@@ -29,7 +29,7 @@ def cat_command(input_path: str, numbered: bool = False) -> None:
 ```
 python -m src.lab06.cli_text cat --input data/samples/people.csv -n
 ```
-![cat -n](img01.PNG)
+![cat -n](../../images/lab06/img01.PNG)
 
 
 ### Подкоманда stats
@@ -56,13 +56,13 @@ def stats_command(input_path: str, top: int = 5) -> None:
 ```
 python -m src.lab06.cli_text stats --input data/lab04/input.txt
 ```
-![stats](img02.PNG)
+![stats](../../images/lab06/img02.PNG)
 
 Запуск с заданным размером топа:
 ```
 python -m src.lab06.cli_text stats --input data/lab04/input.txt --top 3
 ```
-![stats top 3](img03.PNG)
+![stats top 3](../../images/lab06/img03.PNG)
 
 ### Функция main и справка
 
@@ -103,19 +103,19 @@ if __name__ == "__main__":
 ```
 python -m src.lab06.cli_text --help
 ```
-![help](img04.PNG)
+![help](../../images/lab06/img04.PNG)
 
 Справка по `cat`:
 ```
 python -m src.lab06.cli_text cat --help
 ```
-![help cat](img05.PNG)
+![help cat](../../images/lab06/img05.PNG)
 
 Справка по `stats`:
 ```
 python -m src.lab06.cli_text stats --help
 ```
-![help stats](img06.PNG)
+![help stats](../../images/lab06/img06.PNG)
 
 ## cli_convert.py
 
@@ -172,46 +172,46 @@ if __name__ == "__main__":
 ```
 python -m src.lab06.cli_convert json2csv --in data/samples/people.json --out data/out/people.csv
 ```
-![json2csv](img07.PNG)
+![json2csv](../../images/lab06/img07.PNG)
 
 ### csv2json
 Конвертирует CSV в JSON.
 ```
 python -m src.lab06.cli_convert csv2json --in data/samples/people.csv --out data/out/people.json
 ```
-![csv2json](img08.PNG)
+![csv2json](../../images/lab06/img08.PNG)
 
 ### csv2xlsx
 Конвертирует CSV в XLSX.
 ```
 python -m src.lab06.cli_convert csv2xlsx --in data/samples/people.csv --out data/out/people.xlsx
 ```
-![csv2xlsx](img09.PNG)
+![csv2xlsx](../../images/lab06/img09.PNG)
 
 ### Справка
 Общая справка по всем подкомандам:
 ```
 python -m src.lab06.cli_convert --help
 ```
-![help convert](img10.PNG)
+![help convert](../../images/lab06/img10.PNG)
 
 Справка по `json2csv`:
 ```
 python -m src.lab06.cli_convert json2csv --help
 ```
-![help json2csv](img11.PNG)
+![help json2csv](../../images/lab06/img11.PNG)
 
 Справка по `csv2json`:
 ```
 python -m src.lab06.cli_convert csv2json --help
 ```
-![help csv2json](img12.PNG)
+![help csv2json](../../images/lab06/img12.PNG)
 
 Справка по `csv2xlsx`:
 ```
 python -m src.lab06.cli_convert csv2xlsx --help
 ```
-![help csv2xlsx](img13.PNG)
+![help csv2xlsx](../../images/lab06/img13.PNG)
 
 ## Обработка ошибок
 
@@ -219,10 +219,10 @@ python -m src.lab06.cli_convert csv2xlsx --help
 ```
 python -m src.lab06.cli_text cat --input data/samples/net.txt
 ```
-![нет файла](img14.PNG)
+![нет файла](../../images/lab06/img14.PNG)
 
 Неверное значение `--top`:
 ```
 python -m src.lab06.cli_text stats --input data/lab04/input.txt --top 0
 ```
-![top 0](img15.PNG)
+![top 0](../../images/lab06/img15.PNG)
