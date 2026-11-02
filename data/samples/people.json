@@ -1,27 +1,17 @@
 [
   {
-    "name": "Alice",
-    "age": 22,
-    "city": "SPB"
+    "name": "Gojo Satoru",
+    "age": 29,
+    "city": "Tokyo"
   },
   {
-    "name": "Bob",
-    "age": 25,
-    "city": "Moscow"
+    "name": "Tanjiro",
+    "age": 16,
+    "city": "Tokyo"
   },
   {
     "name": "Carlos",
     "age": 30,
     "city": "Kazan"
-  },
-  {
-    "name": "Dana",
-    "age": 21,
-    "city": "SPB"
-  },
-  {
-    "name": "Andrey",
-    "age": 27,
-    "city": "Novosibirsk"
   }
 ]
