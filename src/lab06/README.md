@@ -167,21 +167,21 @@ if __name__ == "__main__":
     main()
 ```
 
-### json2csv
+### json to csv
 Конвертирует JSON в CSV.
 ```
 python -m src.lab06.cli_convert json2csv --in data/samples/people.json --out data/out/people.csv
 ```
 ![json2csv](../../images/lab06/img07.PNG)
 
-### csv2json
+### csv to json
 Конвертирует CSV в JSON.
 ```
 python -m src.lab06.cli_convert csv2json --in data/samples/people.csv --out data/out/people.json
 ```
 ![csv2json](../../images/lab06/img08.PNG)
 
-### csv2xlsx
+### csv to xlsx
 Конвертирует CSV в XLSX.
 ```
 python -m src.lab06.cli_convert csv2xlsx --in data/samples/people.csv --out data/out/people.xlsx
@@ -195,19 +195,19 @@ python -m src.lab06.cli_convert --help
 ```
 ![help convert](../../images/lab06/img10.PNG)
 
-Справка по `json2csv`:
+Справка по `json to csv`:
 ```
 python -m src.lab06.cli_convert json2csv --help
 ```
 ![help json2csv](../../images/lab06/img11.PNG)
 
-Справка по `csv2json`:
+Справка по `csv to json`:
 ```
 python -m src.lab06.cli_convert csv2json --help
 ```
 ![help csv2json](../../images/lab06/img12.PNG)
 
-Справка по `csv2xlsx`:
+Справка по `csv to xlsx`:
 ```
 python -m src.lab06.cli_convert csv2xlsx --help
 ```
