@@ -1,7 +1,6 @@
 # Лабораторная работа №6
 Лелькова Юлия
 
-В ЛР6 я обернула функции из ЛР3, ЛР4 и ЛР5 в консольные утилиты на `argparse`:
 - `cli_text.py` — подкоманды `cat` (вывод файла) и `stats` (частоты слов);
 - `cli_convert.py` — подкоманды `json2csv`, `csv2xlsx`, `csv2json` (конвертация с помощью функций из ЛР5).
 
@@ -54,13 +53,13 @@ def stats_command(input_path: str, top: int = 5) -> None:
 
 Запуск с топом по умолчанию:
 ```
-python -m src.lab06.cli_text stats --input data/lab04/input.txt
+python -m src.lab06.cli_text stats --input data/input.txt
 ```
 ![stats](../../images/lab06/img02.PNG)
 
 Запуск с заданным размером топа:
 ```
-python -m src.lab06.cli_text stats --input data/lab04/input.txt --top 3
+python -m src.lab06.cli_text stats --input data/input.txt --top 3
 ```
 ![stats top 3](../../images/lab06/img03.PNG)
 
