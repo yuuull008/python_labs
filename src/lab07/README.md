@@ -10,17 +10,6 @@ python -m src.lab07.check
 python -m src.lab07.bench
 ```
 
-## Сложность реализованных алгоритмов
-
-| Алгоритм | Время | Доп. память |
-|---|---|---|
-| `linear_search` | O(n) | O(1) |
-| `binary_search` | O(log n) | O(1) |
-| `two_sum_brute` | O(n²) | O(1) |
-| `two_sum_fast` | O(n) | O(n), словарь |
-| `bubble_sort` | O(n²), O(n) на отсортированном (ранний выход) | O(n), копия списка |
-| `insertion_sort` | O(n²), близко к O(n) на почти отсортированном | O(n), копия списка |
-| `selection_sort` | O(n²) всегда | O(n), копия списка |
 
 ## 1. Поиск (`search.py`)
 
@@ -260,7 +249,7 @@ $ python -m src.lab07.check
 OK: 791 проверок пройдено
 ```
 
-![Вывод check.py](../images/lab07/img01.PNG)
+![Вывод check.py](../../images/lab07/img01.PNG)
 
 ## 4. Бенчмарк (`bench.py`)
 
@@ -358,7 +347,7 @@ def main():
 
 Вывод в консоль:
 
-![Вывод bench.py](../images/lab07/img02.PNG)
+![Вывод bench.py](../../images/lab07/img02.PNG)
 
 Те же данные из `data/lab07/bench.csv`:
 
@@ -383,6 +372,18 @@ def main():
 | two_sum | 1000 | two_sum_fast | 0.000084 |
 | two_sum | 10000 | two_sum_brute | 1.944602 |
 | two_sum | 10000 | two_sum_fast | 0.001013 |
+
+## Сложность реализованных алгоритмов
+
+| Алгоритм | Время | Доп. память |
+|---|---|---|
+| `linear_search` | O(n) | O(1) |
+| `binary_search` | O(log n) | O(1) |
+| `two_sum_brute` | O(n²) | O(1) |
+| `two_sum_fast` | O(n) | O(n), словарь |
+| `bubble_sort` | O(n²), O(n) на отсортированном (ранний выход) | O(n), копия списка |
+| `insertion_sort` | O(n²), близко к O(n) на почти отсортированном | O(n), копия списка |
+| `selection_sort` | O(n²) всегда | O(n), копия списка |
 
 ## Выводы
 
