@@ -373,17 +373,7 @@ def main():
 | two_sum | 10000 | two_sum_brute | 1.944602 |
 | two_sum | 10000 | two_sum_fast | 0.001013 |
 
-## Сложность реализованных алгоритмов
 
-| Алгоритм | Время | Доп. память |
-|---|---|---|
-| `linear_search` | O(n) | O(1) |
-| `binary_search` | O(log n) | O(1) |
-| `two_sum_brute` | O(n²) | O(1) |
-| `two_sum_fast` | O(n) | O(n), словарь |
-| `bubble_sort` | O(n²), O(n) на отсортированном (ранний выход) | O(n), копия списка |
-| `insertion_sort` | O(n²), близко к O(n) на почти отсортированном | O(n), копия списка |
-| `selection_sort` | O(n²) всегда | O(n), копия списка |
 
 ## Выводы
 
